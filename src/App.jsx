@@ -1,15 +1,17 @@
 import { useState } from 'react'
+import Grid from './components/Grid.jsx'
 import './App.css'
 
 function App() {
+  // Render App - Uses Placeholder Values for Grid Props
   return (
-    <body>
-      <header className="text-3xl font-bold">
+    <>
+      <header className="bg-sky-200 text-3xl font-bold">
         Title Goes Here
       </header>
 
       <div>
-        <p>Grid Goes Here</p>
+        <Grid rows={4} cols={5}/>
       </div>
       <div>
         <p>Buttons Go Here</p>
@@ -18,7 +20,7 @@ function App() {
       <footer>
         Sources Go Here
       </footer>
-    </body>
+    </>
   )
 }
 
